@@ -1,0 +1,17 @@
+<breakfast-menu>
+    <food id="1">
+        <name>Belgian Waffles</name>
+        <price>$5.95</price>
+    </food>
+    <food id="2">
+        <name>Strawberry Belgian Waffles</name>
+        <price>$7.95</price>
+    </food>
+    <food id="3"><name>Strawberry Belgian
+            Waffles Vip</name><price>$9.95</price>
+    </food>
+    <food>
+        <name>Tea</name>
+        <price>$4.31</price>
+    </food>
+</breakfast-menu>
