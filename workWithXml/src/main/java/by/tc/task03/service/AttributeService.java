@@ -10,7 +10,7 @@ public class AttributeService {
     private static final char FIND_END_BRACKET = '>';
 
 
-    public Attribute processInformationAttribute(String line) { // получаем имя аттрибута и его значение
+    public Attribute processInformationAttribute(String line) { 
         Attribute attribute = new Attribute();
         String tempProcessingResult;
         String[] result = line.split(FIND_END_TAG);
@@ -26,7 +26,6 @@ public class AttributeService {
     public boolean isStringWithAttribute(String str) {
         int countLeft = 0, countRight = 0;
         for (char element : str.toCharArray()) {
-            //смотрим, чем является строка: атрибутом или названием объекта, ну походу это надо менять, так как в строке может быть больше 2-х скобок
             if (element == FIND_OPENING_BRACKET) countLeft++;
             if (element == FIND_END_BRACKET) countRight++;
         }
